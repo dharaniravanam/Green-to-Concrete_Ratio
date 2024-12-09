@@ -2,8 +2,8 @@
   This project aims to use AI image Segmentation to analyze satellite or drone images and determine the green-to-concrete ratio in urban areas. We will identify and classify areas of vegetation and concrete, calculate their ratio for urban planning, and develop a method that can be easily applied to assess green spaces in cities.
 
 # Project Journey 
-Initially, we tried to implement the project using K-means clustering, but we got less accuracy. Then we moved to supervised learning, found data from aerial maps, and started labeling with three classes: buildings, roads, and white spaces. Later, we started working on TensorFlow UNet but were unable to detect proper boundaries, and we did not improve much because of less time. So, for faster training, we moved to the YOLOv8 model.
-But Below are code linking if you are interested to improve
+Initially, we tried implementing the project using K-means clustering, but we got less accuracy. Then we moved to supervised learning, found data from aerial maps, and started labeling with three classes: buildings, roads, and white spaces. Later, we started working on TensorFlow UNet but could not detect proper boundaries, and we did not improve much because of the lack of time. So, for faster training, we moved to the YOLOv8 model.
+But Below are code links if you are interested in improving
 
 # implementation path 
 K- means cluster - https://github.com/dharaniravanam/Green-to-Concrete_Ratio/tree/main/K-Cluster
@@ -15,20 +15,20 @@ Yolov8 - https://github.com/dharaniravanam/Green-to-Concrete_Ratio/tree/main/Yol
 # guide to execution
 
 # K-cluster :
-dataset: SAS.zip
+Dataset: SAS.zip
 
-Above SAS.zip is the dataset we used for cluster implementation. These are the images from SAS Planet software. Remaining files are related to the code implementation of K-mean Cluster.
+Above SAS.zip is the dataset we used for cluster implementation. These are the images from the SAS Planet software. The remaining files are related to the code implementation of the K-mean Cluster.
 
 # Tensor Flow Unet:
-dataset: Green to Concrete Ratio.v1i.tfrecord.zip
+Dataset: Green to Concrete Ratio.v1i.tfrecord.zip
 
-above is the dataset by taking image from openaerialmap and then annotated image in roboflow. Then we downloaded data in the Tfrecord format as seen in folder. and the main file contains all packages you need for the project implementation these packages can also be useful for yolo model also. and then the code for training is present in code file.
+Above is the dataset by taking images from openaerialmap and then annotating images in roboflow. Then we downloaded data in the Tfrecord format as seen in the folder. The main file contains all the packages you need for the project implementation these packages can also be useful for the Yolo model. and then the code for training is present in the code file.
 
 # YOLOv8_main:
 dataset: Yolov8_main/Green-to-Concrete-Ratio-5.zip
 
-The above is the same custom dataset we used for tensor flow but we have dowloaded in yolov8 format. you can also use code for downloading this in Yolov8_main/mainyolov8.ipynb.
- and please do dowload yolov8s-seg.pt before starting with the training and then you can start implemtation with is present in Yolov8_main/mainyolov8.ipynb. i am not able to add any results to git as then are huge but you can use youtube link to see them.
+The above is the same custom dataset we used for tensor flow but we have downloaded it in yolov8 format. You can also use the code for downloading this in Yolov8_main/mainyolov8.ipynb.
+ And please do download yolov8s-seg.pt before starting with the training and then you can start the implementation of the code from Yolov8_main/mainyolov8.ipynb. I am not able to add any results to git as they are huge but you can use the youtube link to see them.
 
 # our Results
 ![image](https://github.com/user-attachments/assets/216aaae3-6097-4f75-ae1a-8ff8cdb2f2bb)
